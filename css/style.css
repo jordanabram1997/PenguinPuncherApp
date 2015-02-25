@@ -1,5 +1,5 @@
 body{
-	background-color: #3c3b52;
+	background-color: #3c3b52 !important;
 }
 .logo{
 	text-align: center;
@@ -7,8 +7,9 @@ body{
 	font-family: 'Sigmar One', cursive;
 }
 .logo>img{
-	max-width: 70%;
+	max-width: 90%;
 	margin-top: 34px;
+	height: 170px;
 }
 a.logo:hover{
 	text-decoration: none;
@@ -19,6 +20,46 @@ a.logo:hover{
 }
 .signup-btn{
 	margin-top: 30px;
+}
+.login-container{
+	padding-top: 30px;
+}
+input#username{
+	color: white;
+}
+input#password{
+	color: white;
+}
+.waves-effect{
+	width: 94%;
+}
+.form-control-wrapper{
+	margin-top: 30px;
+}
+input.form-control{
+	color: white;
+}
+.btn-submit{
+	margin-top: 20px;
+}
+button.btn.btn-fab.btn-fab-mini.btn-raised.btn-sm.btn-success{
+	margin-top: 10px;
+	background-color: transparent;
+}
+.btn-black{
+	color: black;
+}
+.btn-black:hover{
+	text-decoration: none;
+}
+.alternate{
+	color: #a5a9ac;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: 'Roboto', sans-serif;
+	padding-top: 70px;
+	padding: 0 20px;
+	text-align: center;
 }
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
