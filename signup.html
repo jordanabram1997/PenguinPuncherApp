@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="mobile-web-app-capable" content="yes">
-    <title>Penguin Puncher</title>
+    <title>Penguin Puncher Sign Up</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="manifest" href="manifest.json">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
     <link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.2/css/material-wfont.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.2/css/material.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.2/css/ripples.min.css">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -27,22 +27,28 @@
   <body>
     <div class="container">
       <div class="logo-container">
-        <div class="logo animated pulse"><img src="img/penguin.png" alt="PenguinPuncher"></div>
+        <div class="logo animated flipInX"><img src="img/penguin.png" alt="PenguinPuncher"></div>
       </div>
-      <div class="inputs">
-        <input type="text" class="form-control floating-label" placeholder="Username">
-        <input type="text" class="form-control floating-label" placeholder="Password">
+      <div class="login-container">
+        <form class="form-horizontal">
+          <fieldset>
+            <div class="form-group">
+              <div class="col-lg-10">
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-lg-10">
+                <input type="password" maxlength="20" class="form-control" id="inputPassword" placeholder="Password" data-hint="Enter A Password up to 20 Characters">
+          </fieldset>
+          <div class="submit-container">
+            <button class="btn btn-primary btn-raised fullwidth">Submit</button>
+          </div>
+        </form>
       </div>
-      <div class="form-group">
-        <div class="btn-submit text-center col-xs-12 col-lg-10 col-lg-offset-2">
-          <button class="btn btn-default"><a class="btn-flat btn-black">Cancel</a></button>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
+      <div id="alternate-login">
+        <h5 class="alternate-text text-center">OR</h5>
       </div>
-      <div class="signup-container">
-        <p class="alternate">By Clicking Sign In, you are indication that you have read the <a href="#">Terms of Service</a> and agree to the <a href="#">Privacy Policy</a>.</p>
-      </div>
-    </div>  
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

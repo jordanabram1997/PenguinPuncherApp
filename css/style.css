@@ -23,6 +23,8 @@ a.logo:hover{
 }
 .login-container{
 	padding-top: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 input#username{
 	color: white;
@@ -60,6 +62,29 @@ button.btn.btn-fab.btn-fab-mini.btn-raised.btn-sm.btn-success{
 	padding-top: 70px;
 	padding: 0 20px;
 	text-align: center;
+}
+.custom-jumbo{
+	background-color: #3F3E56;
+}
+.form-group{
+	padding-top: 3px;
+}
+input#inputEmail{
+	text-align:center;
+	color: white;
+}
+input#inputPassword{
+	color: white;
+	text-align: center;
+}
+fieldset{
+	color: white;
+}
+button.fullwidth{
+	width: 100%;
+}
+.alternate-text{
+	color: white;
 }
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
