@@ -10,13 +10,13 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="manifest" href="manifest.json">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/game.css" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.min.css">
     <link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.2/css/material-wfont.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.2/css/material.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.2/css/ripples.min.css">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -26,35 +26,62 @@
   </head>
   <body>
     <div class="container">
-      <div class="logo-container">
-        <div class="logo animated pulse"><img src="img/penguin.png" alt="PenguinPuncher"></div>
-      </div>
-      <div class="inputs">
-        <input type="text" class="form-control floating-label" placeholder="Username">
-        <input type="text" class="form-control floating-label" placeholder="Password">
-      </div>
-      <div class="form-group">
-        <div class="btn-submit text-center col-xs-12">
-          <button class="btn btn-default"><a href="index.html"class="btn-flat btn-black">Cancel</a></button>
-          <button type="submit" class="btn btn-primary">Submit</button>
+      <div class="game-container__click-container">
+        <div class="game-container__clicker">
+          <div class="game-hud text-center">
+              <div class="game-hud__score js-score">0</div>
+              <div>
+                <div class="dpc">
+                  Punches: <span class="game-hud__dpc js-dpc">0</span> / click
+                </div>
+                <div class="dps">
+                  Punches:  <span class="game-hud__dps js-dps">0</span> / seconds
+                </div>
+                <div class="experience">
+                  Total Experience:  <span class="game-hud__experience js-experience">0</span>
+                </div>                      
+              </div>
+          </div>
+          <div class="progress">
+              <div class="progress-bar progress-bar-striped active js-progress" style="width: 0%">
+                <div class="text-center">
+                  Level:  <span class="game-hud__level js-level">0</span> 
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="upgrades-container">
+          <div class="game-container__upgrades output">
+          </div>
         </div>
       </div>
-      <div class="signup-container">
-        <p class="alternate">By Clicking Sign In, you are indication that you have read the <a href="#">Terms of Service</a> and agree to the <a href="#">Privacy Policy</a>.</p>
-      </div>
-    </div>  
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.2/js/material.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.2/js/ripples.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script src="js/upgrades.js"></script>
+    <script src="js/game.js"></script>
+    <script id="upgrade-template" type="text/x-handlebars-template">
+        {{#each upgrades}}
+        <div class="upgrade-item media" data-id="{{@index}}">
+            <div class="pull-left">
+                <img class="media-object" src="{{image}}" alt="{{title}}">
+            </div>
+            <div class="media-body">
+                <div class="pull-right upgrade-item__price">{{addCommas price}}</div>
+                <h4 class="media-heading">{{title}}</h4>
+                DPC: {{addCommas dpc}} DPS: {{addCommas dps}}
+            </div>
+        </div>
+        {{/each}}
+    </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
       ga('create', 'UA-55858720-2', 'auto');
       ga('send', 'pageview');
