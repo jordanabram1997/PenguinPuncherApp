@@ -5,7 +5,7 @@ var data = {
 			dpc: 1,
 			dps: 0,
 			price:50,
-			image:"http://img2.wikia.nocookie.net/__cb20130827135001/cookieclicker/images/1/13/WhiteCursor.png",
+			image:"img/morepunches.png",
 			multiplier:1.1
 		},
 		{
@@ -13,7 +13,7 @@ var data = {
 			dpc: 0,
 			dps: 1,
 			price:250,
-			image:"http://img2.wikia.nocookie.net/__cb20130827135001/cookieclicker/images/1/13/WhiteCursor.png",
+			image:"img/icecube.png",
 			multiplier:1.1
 		},
 		{
@@ -21,7 +21,7 @@ var data = {
 			dpc: 0,
 			dps: 4,
 			price:1000,
-			image:"img/wooden-pickaxe.png",
+			image:"img/sharpslaps.png",
 			multiplier:1.5
 		},
 		{
@@ -29,7 +29,7 @@ var data = {
 			dpc: 0,
 			dps: 15,
 			price:5000,
-			image:"img/stone-pickaxe.png",
+			image:"img/iceberg.png",
 			multiplier:1.5
 		},
 		{
@@ -37,23 +37,23 @@ var data = {
 			dpc: 0,
 			dps: 60,
 			price:25000,
-			image:"img/iron-pickaxe.png",
+			image:"img/superpunch.png",
 			multiplier:1.5
 		},
 		{
-			title: "Ice Cube",
+			title: "Melting Ice",
 			dpc: 0,
 			dps: 200,
 			price:100000,
-			image:"img/golden-pickaxe.png",
+			image:"img/meltingice.png",
 			multiplier:1.5
 		},
 		{
-			title: "Diamond Pickaxe",
+			title: "Ice Sword",
 			dpc: 0,
 			dps: 1000,
 			price:750000,
-			image:"img/diamond-pickaxe.png",
+			image:"img/icesword.png",
 			multiplier:1.5
 		},
 		{
