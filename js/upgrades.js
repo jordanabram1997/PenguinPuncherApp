@@ -77,7 +77,7 @@ var data = {
 			pps: 0,
 			ppc: 10,
 			price:50000,
-			image:"img/diamond-pickaxe.png",
+			image:"img/404.png",
 			multiplier:1.5
 		},
 		{
@@ -93,7 +93,7 @@ var data = {
 			ppc: 0,
 			pps: 50000,
 			price:100000000,
-			image:"img/diamond-pickaxe.png",
+			image:"img/404.png",
 			multiplier:1.5
 		},
 		{
