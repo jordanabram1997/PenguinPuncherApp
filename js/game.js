@@ -5,10 +5,10 @@ $(document).ready(function(){
 	loadData();
 	setEverything();
 	setupUpgrades();
-	setupDPS();
+	setupPPS();
 
 	$(".js-clicker").on("mousedown", function(){
-		settings.score = settings.score + settings.dpc;
+		settings.score = settings.score + settings.ppc;
 		settings.experience = settings.experience + 1;
 
 		settings.level = figureOutLevel();
@@ -26,8 +26,8 @@ $(document).ready(function(){
 			//Remove Price from Current Score
 			settings.score = settings.score - upgrade.price;
 
-			settings.dpc = settings.dpc + upgrade.dpc;
-			settings.dps = settings.dps + upgrade.dps;
+			settings.ppc = settings.ppc + upgrade.ppc;
+			settings.pps = settings.pps + upgrade.pps;
 			setEverything();
 			saveData();
 			ga('send', 'event', 'Upgrade', 'click',upgrade.title);
@@ -45,8 +45,8 @@ function saveData(){
 function loadData(){
 	var defaultSettings = {
 		score: 0,
-		dpc: 1,
-		dps: 0,
+		ppc: 1,
+		pps: 0,
 		level:1,
 		experience:0
 	};
@@ -58,8 +58,8 @@ function loadData(){
 
 function setEverything(){
 	$(".js-score").html(numberWithCommas(Math.floor(settings.score))); 
-	$(".js-dpc").html(numberWithCommas(settings.dpc));
-	$(".js-dps").html(numberWithCommas(settings.dps));
+	$(".js-ppc").html(numberWithCommas(settings.ppc));
+	$(".js-pps").html(numberWithCommas(settings.pps));
 	$(".js-level").html(numberWithCommas(settings.level));
 	$(".js-experience").html(numberWithCommas(settings.experience));
 	$(".js-progress").width(getExperiencePercentage());
@@ -76,7 +76,7 @@ function setupUpgrades(){
 	var template = Handlebars.compile(source);
 	var html    = template(data);
 
-	$(".output").html(html);
+	$(".js-updates-output").html(html);
 }
 
 function numberWithCommas(x) {
@@ -112,11 +112,11 @@ window.requestAnimFrame = (function(){
           };
 })();
 
-function setupDPS(){
-	requestAnimFrame(setupDPS);
+function setupPPS(){
+	requestAnimFrame(setupPPS);
 
 	// Update code here
-	var update = settings.dps / 60;
+	var update = settings.pps / 60;
 
 	settings.score = settings.score + update;
 	setEverything();		
