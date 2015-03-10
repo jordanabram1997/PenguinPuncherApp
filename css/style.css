@@ -86,6 +86,9 @@ button.fullwidth{
 .alternate-text{
 	color: white;
 }
+.upgrade-item__image {
+	max-width: 60px;
+}
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 

@@ -64,6 +64,9 @@ button.btn.btn-primary.btn-raised.js-clicker{
 	width: 97%;
 	border-radius: 4px;
 }
+.upgrade-item__image{
+	max-width: 60px;
+}
 ::-webkit-scrollbar{
 	width: 5px;
 }
