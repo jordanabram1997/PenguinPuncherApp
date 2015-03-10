@@ -41,6 +41,14 @@ var data = {
 			multiplier:1.5
 		},
 		{
+			title: "Friend",
+			dps: 0,
+			dpc: 10,
+			price:50000,
+			image:"img/404.png",
+			multiplier:1.5
+		},
+		{
 			title: "Melting Ice",
 			dpc: 0,
 			dps: 200,
@@ -61,23 +69,7 @@ var data = {
 			dpc: 0,
 			dps: 3500,
 			price:800000,
-			image:"img/diamond-pickaxe.png",
-			multiplier:1.5
-		},
-		{
-			title: "Friend",
-			dps: 0,
-			dpc: 10,
-			price:50000,
-			image:"img/diamond-pickaxe.png",
-			multiplier:1.5
-		},
-		{
-			title: "TNT",
-			dpc: 0,
-			dps: 10000,
-			price:175500000,
-			image:"img/diamond-pickaxe.png",
+			image:"img/404.png",
 			multiplier:1.5
 		},
 		{
@@ -85,7 +77,15 @@ var data = {
 			dpc: 0,
 			dps: 50000,
 			price:100000000,
-			image:"img/diamond-pickaxe.png",
+			image:"img/404.png",
+			multiplier:1.5
+		},
+		{
+			title: "TNT",
+			dpc: 0,
+			dps: 10000,
+			price:175500000,
+			image:"img/404.png",
 			multiplier:1.5
 		},
 		{
@@ -93,7 +93,7 @@ var data = {
 			dpc: 0,
 			dps: 3000000,
 			price:1000000000,
-			image:"img/diamond-pickaxe.png",
+			image:"img/404.png",
 			multiplier:1.5
 		},
 		{
@@ -101,7 +101,7 @@ var data = {
 			dpc: 0,
 			dps: 1750000,
 			price:7500000000,
-			image:"img/diamond-pickaxe.png",
+			image:"img/404.png",
 			multiplier:1.5
 		},
 		{
@@ -109,7 +109,7 @@ var data = {
 			dpc: 0,
 			dps: 7500000,
 			price:50000000000,
-			image:"img/diamond-pickaxe.png",
+			image:"img/404.png",
 			multiplier:1.5
 		},
 		{
@@ -117,7 +117,7 @@ var data = {
 			dpc: "?",
 			dps: "?",
 			price:"?",
-			image:"img/diamond-pickaxe.png",
+			image:"img/404.png",
 			multiplier:1.5
 		},
 	]
