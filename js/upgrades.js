@@ -42,8 +42,8 @@ var data = {
 		},
 		{
 			title: "Friend",
-			dps: 0,
-			dpc: 10,
+			pps: 0,
+			ppc: 10,
 			price:50000,
 			image:"img/404.png",
 			multiplier:1.5
