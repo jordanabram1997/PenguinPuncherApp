@@ -37,7 +37,6 @@ $(document).ready(function(){
 
 });
 
-
 function saveData(){
 	localStorage.setItem('clickerSettings', JSON.stringify(settings));
 }
@@ -53,7 +52,7 @@ function loadData(){
 
 	settings = JSON.parse(localStorage.getItem('clickerSettings')) || defaultSettings;
 
-	settings = $.extend(settings, defaultSettings);
+	settings = $.extend(defaultSettings, settings);
 }
 
 function setEverything(){
@@ -65,11 +64,9 @@ function setEverything(){
 	$(".js-progress").width(getExperiencePercentage());
 }
 
-
 Handlebars.registerHelper('addCommas', function(number) {
   return numberWithCommas(number);
 });
-
 
 function setupUpgrades(){
 	var source   = $("#upgrade-template").html();
@@ -98,7 +95,7 @@ function figureOutLevel() {
 
 function getExperiencePercentage() {
 
-	var percentage = ((settings.experience - experienceNeeded(settings.level)) / experienceNeeded(settings.level + 1)) * 100;
+	var percentage = ( (settings.experience - experienceNeeded(settings.level)) / (experienceNeeded(settings.level + 1) - experienceNeeded(settings.level))) * 100;
 
 	return percentage + "%"
 }
