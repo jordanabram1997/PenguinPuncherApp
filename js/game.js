@@ -37,7 +37,6 @@ $(document).ready(function(){
 
 });
 
-
 function saveData(){
 	localStorage.setItem('clickerSettings', JSON.stringify(settings));
 }
@@ -65,11 +64,9 @@ function setEverything(){
 	$(".js-progress").width(getExperiencePercentage());
 }
 
-
 Handlebars.registerHelper('addCommas', function(number) {
   return numberWithCommas(number);
 });
-
 
 function setupUpgrades(){
 	var source   = $("#upgrade-template").html();
