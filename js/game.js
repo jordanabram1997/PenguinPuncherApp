@@ -98,7 +98,7 @@ function figureOutLevel() {
 
 function getExperiencePercentage() {
 
-	var percentage = ((settings.experience - experienceNeeded(settings.level)) / experienceNeeded(settings.level + 1)) * 100;
+	var percentage = ( (settings.experience - experienceNeeded(settings.level)) / (experienceNeeded(settings.level + 1) - experienceNeeded(settings.level))) * 100;
 
 	return percentage + "%"
 }
