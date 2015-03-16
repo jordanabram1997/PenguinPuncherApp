@@ -78,11 +78,11 @@ button.btn.btn-primary.btn-raised.js-clicker{
 .upgrade-item__image{
 	max-width: 60px;
 }
-.shadow{
+.main-shadow{
 	box-shadow: 0px 6px 47px #290754;
 	text-shadow: 0px 2px #24054A;
 }
-.progress{
+.main-progress{
 	text-align: center;
 	margin: 5px;
 	height: 18px !important;
