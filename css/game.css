@@ -32,10 +32,6 @@ body{
 	font-family: 'Roboto', sans-serif;
 	font-size: 17px;	
 }
-.game-hud__stat:hover {
-	font-size: 20px;
-	color: rgb(116, 16, 195);
-}
 .game-hud{
 	color: white;
 }
